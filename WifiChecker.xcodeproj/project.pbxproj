@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		967673361797782E00E5BCA7 /* libQuickDialog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 967673331797770A00E5BCA7 /* libQuickDialog.a */; };
+		967673381797783800E5BCA7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967673371797783800E5BCA7 /* MapKit.framework */; };
+		9676733A1797783F00E5BCA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967673391797783E00E5BCA7 /* CoreLocation.framework */; };
+		9676733D17977E1300E5BCA7 /* QuickSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9676733C17977E1300E5BCA7 /* QuickSettingsViewController.m */; };
+		967885CC17A0B43B00AC4110 /* Hierarchy and Application.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 967885CB17A0B43B00AC4110 /* Hierarchy and Application.rtf */; };
+		969349BE177823A500A96464 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969349BD177823A500A96464 /* SystemConfiguration.framework */; };
+		969349C417782EFD00A96464 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 969349C217782C9B00A96464 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		96A9825417827DAE0077ED3C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96A9825317827DAE0077ED3C /* Settings.bundle */; };
+		96B37F11177C230C00BF8D59 /* ErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B37F0F177C230C00BF8D59 /* ErrorViewController.m */; };
+		96BDAA1F17854EAA00D0C274 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAA1E17854EAA00D0C274 /* icon.png */; };
+		96BDAA211785501E00D0C274 /* retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAA201785501E00D0C274 /* retina.png */; };
 		96CAE6E71778156A00AD59EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CAE6E61778156A00AD59EC /* UIKit.framework */; };
 		96CAE6E91778156A00AD59EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CAE6E81778156A00AD59EC /* Foundation.framework */; };
 		96CAE6EB1778156A00AD59EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CAE6EA1778156A00AD59EC /* CoreGraphics.framework */; };
@@ -19,24 +30,48 @@
 		96CAE7001778156A00AD59EC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CAE6FE1778156A00AD59EC /* MainStoryboard_iPhone.storyboard */; };
 		96CAE7031778156A00AD59EC /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CAE7011778156A00AD59EC /* MainStoryboard_iPad.storyboard */; };
 		96CAE7061778156A00AD59EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CAE7051778156A00AD59EC /* ViewController.m */; };
-		96CAE70E1778156A00AD59EC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CAE70D1778156A00AD59EC /* SenTestingKit.framework */; };
-		96CAE70F1778156A00AD59EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CAE6E61778156A00AD59EC /* UIKit.framework */; };
-		96CAE7101778156A00AD59EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CAE6E81778156A00AD59EC /* Foundation.framework */; };
-		96CAE7181778156A00AD59EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96CAE7161778156A00AD59EC /* InfoPlist.strings */; };
-		96CAE71B1778156A00AD59EC /* WifiCheckerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CAE71A1778156A00AD59EC /* WifiCheckerTests.m */; };
+		96E777AA17811DF800A9F80A /* OpeningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E777A917811DF800A9F80A /* OpeningViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		96CAE7111778156A00AD59EC /* PBXContainerItemProxy */ = {
+		967673301797770A00E5BCA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 96CAE6DB1778156A00AD59EC /* Project object */;
+			containerPortal = 9676732B1797770A00E5BCA7 /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D80B0E3313E052DF00FA85CA;
+			remoteInfo = QuickDialogExample;
+		};
+		967673321797770A00E5BCA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9676732B1797770A00E5BCA7 /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C542393145ADEBD0026A152;
+			remoteInfo = QuickDialog;
+		};
+		967673341797782300E5BCA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9676732B1797770A00E5BCA7 /* QuickDialog.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 96CAE6E21778156A00AD59EC;
-			remoteInfo = WifiChecker;
+			remoteGlobalIDString = 2C542392145ADEBD0026A152;
+			remoteInfo = QuickDialog;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9676732B1797770A00E5BCA7 /* QuickDialog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuickDialog.xcodeproj; path = QuickDialog/QuickDialog.xcodeproj; sourceTree = "<group>"; };
+		967673371797783800E5BCA7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		967673391797783E00E5BCA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9676733B17977E1300E5BCA7 /* QuickSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSettingsViewController.h; sourceTree = "<group>"; };
+		9676733C17977E1300E5BCA7 /* QuickSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSettingsViewController.m; sourceTree = "<group>"; };
+		967885CB17A0B43B00AC4110 /* Hierarchy and Application.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Hierarchy and Application.rtf"; sourceTree = "<group>"; };
+		969349BD177823A500A96464 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		969349C117782C9B00A96464 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		969349C217782C9B00A96464 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		96A9825317827DAE0077ED3C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		96B37F0E177C230C00BF8D59 /* ErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorViewController.h; sourceTree = "<group>"; };
+		96B37F0F177C230C00BF8D59 /* ErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorViewController.m; sourceTree = "<group>"; };
+		96BDAA1E17854EAA00D0C274 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		96BDAA201785501E00D0C274 /* retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retina.png; sourceTree = "<group>"; };
 		96CAE6E31778156A00AD59EC /* WifiChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WifiChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CAE6E61778156A00AD59EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96CAE6E81778156A00AD59EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,12 +89,9 @@
 		96CAE7021778156A00AD59EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		96CAE7041778156A00AD59EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		96CAE7051778156A00AD59EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		96CAE70C1778156A00AD59EC /* WifiCheckerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WifiCheckerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CAE70D1778156A00AD59EC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		96CAE7151778156A00AD59EC /* WifiCheckerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WifiCheckerTests-Info.plist"; sourceTree = "<group>"; };
-		96CAE7171778156A00AD59EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		96CAE7191778156A00AD59EC /* WifiCheckerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WifiCheckerTests.h; sourceTree = "<group>"; };
-		96CAE71A1778156A00AD59EC /* WifiCheckerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WifiCheckerTests.m; sourceTree = "<group>"; };
+		96E777A817811DF800A9F80A /* OpeningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeningViewController.h; sourceTree = "<group>"; };
+		96E777A917811DF800A9F80A /* OpeningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpeningViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,30 +99,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9676733A1797783F00E5BCA7 /* CoreLocation.framework in Frameworks */,
+				967673381797783800E5BCA7 /* MapKit.framework in Frameworks */,
+				967673361797782E00E5BCA7 /* libQuickDialog.a in Frameworks */,
+				969349BE177823A500A96464 /* SystemConfiguration.framework in Frameworks */,
 				96CAE6E71778156A00AD59EC /* UIKit.framework in Frameworks */,
 				96CAE6E91778156A00AD59EC /* Foundation.framework in Frameworks */,
 				96CAE6EB1778156A00AD59EC /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		96CAE7081778156A00AD59EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96CAE70E1778156A00AD59EC /* SenTestingKit.framework in Frameworks */,
-				96CAE70F1778156A00AD59EC /* UIKit.framework in Frameworks */,
-				96CAE7101778156A00AD59EC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9676732C1797770A00E5BCA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				967673311797770A00E5BCA7 /* QuickDialogExample.app */,
+				967673331797770A00E5BCA7 /* libQuickDialog.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		96CAE6DA1778156A00AD59EC = {
 			isa = PBXGroup;
 			children = (
+				967673391797783E00E5BCA7 /* CoreLocation.framework */,
+				967673371797783800E5BCA7 /* MapKit.framework */,
+				96BDAA201785501E00D0C274 /* retina.png */,
+				96BDAA1E17854EAA00D0C274 /* icon.png */,
 				96CAE6EC1778156A00AD59EC /* WifiChecker */,
-				96CAE7131778156A00AD59EC /* WifiCheckerTests */,
+				96CAE6ED1778156A00AD59EC /* Supporting Files */,
 				96CAE6E51778156A00AD59EC /* Frameworks */,
 				96CAE6E41778156A00AD59EC /* Products */,
 			);
@@ -100,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				96CAE6E31778156A00AD59EC /* WifiChecker.app */,
-				96CAE70C1778156A00AD59EC /* WifiCheckerTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +146,8 @@
 		96CAE6E51778156A00AD59EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9676732B1797770A00E5BCA7 /* QuickDialog.xcodeproj */,
+				969349BD177823A500A96464 /* SystemConfiguration.framework */,
 				96CAE6E61778156A00AD59EC /* UIKit.framework */,
 				96CAE6E81778156A00AD59EC /* Foundation.framework */,
 				96CAE6EA1778156A00AD59EC /* CoreGraphics.framework */,
@@ -125,7 +165,16 @@
 				96CAE7011778156A00AD59EC /* MainStoryboard_iPad.storyboard */,
 				96CAE7041778156A00AD59EC /* ViewController.h */,
 				96CAE7051778156A00AD59EC /* ViewController.m */,
-				96CAE6ED1778156A00AD59EC /* Supporting Files */,
+				96B37F0E177C230C00BF8D59 /* ErrorViewController.h */,
+				96B37F0F177C230C00BF8D59 /* ErrorViewController.m */,
+				969349C117782C9B00A96464 /* Reachability.h */,
+				969349C217782C9B00A96464 /* Reachability.m */,
+				96E777A817811DF800A9F80A /* OpeningViewController.h */,
+				96E777A917811DF800A9F80A /* OpeningViewController.m */,
+				9676733B17977E1300E5BCA7 /* QuickSettingsViewController.h */,
+				9676733C17977E1300E5BCA7 /* QuickSettingsViewController.m */,
+				96A9825317827DAE0077ED3C /* Settings.bundle */,
+				967885CB17A0B43B00AC4110 /* Hierarchy and Application.rtf */,
 			);
 			path = WifiChecker;
 			sourceTree = "<group>";
@@ -142,25 +191,7 @@
 				96CAE6FC1778156A00AD59EC /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		96CAE7131778156A00AD59EC /* WifiCheckerTests */ = {
-			isa = PBXGroup;
-			children = (
-				96CAE7191778156A00AD59EC /* WifiCheckerTests.h */,
-				96CAE71A1778156A00AD59EC /* WifiCheckerTests.m */,
-				96CAE7141778156A00AD59EC /* Supporting Files */,
-			);
-			path = WifiCheckerTests;
-			sourceTree = "<group>";
-		};
-		96CAE7141778156A00AD59EC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				96CAE7151778156A00AD59EC /* WifiCheckerTests-Info.plist */,
-				96CAE7161778156A00AD59EC /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			path = WifiChecker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,30 +208,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				967673351797782300E5BCA7 /* PBXTargetDependency */,
 			);
 			name = WifiChecker;
 			productName = WifiChecker;
 			productReference = 96CAE6E31778156A00AD59EC /* WifiChecker.app */;
 			productType = "com.apple.product-type.application";
-		};
-		96CAE70B1778156A00AD59EC /* WifiCheckerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 96CAE7211778156A00AD59EC /* Build configuration list for PBXNativeTarget "WifiCheckerTests" */;
-			buildPhases = (
-				96CAE7071778156A00AD59EC /* Sources */,
-				96CAE7081778156A00AD59EC /* Frameworks */,
-				96CAE7091778156A00AD59EC /* Resources */,
-				96CAE70A1778156A00AD59EC /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				96CAE7121778156A00AD59EC /* PBXTargetDependency */,
-			);
-			name = WifiCheckerTests;
-			productName = WifiCheckerTests;
-			productReference = 96CAE70C1778156A00AD59EC /* WifiCheckerTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -221,13 +234,35 @@
 			mainGroup = 96CAE6DA1778156A00AD59EC;
 			productRefGroup = 96CAE6E41778156A00AD59EC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9676732C1797770A00E5BCA7 /* Products */;
+					ProjectRef = 9676732B1797770A00E5BCA7 /* QuickDialog.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				96CAE6E21778156A00AD59EC /* WifiChecker */,
-				96CAE70B1778156A00AD59EC /* WifiCheckerTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		967673311797770A00E5BCA7 /* QuickDialogExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = QuickDialogExample.app;
+			remoteRef = 967673301797770A00E5BCA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		967673331797770A00E5BCA7 /* libQuickDialog.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQuickDialog.a;
+			remoteRef = 967673321797770A00E5BCA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		96CAE6E11778156A00AD59EC /* Resources */ = {
@@ -240,61 +275,37 @@
 				96CAE6FD1778156A00AD59EC /* Default-568h@2x.png in Resources */,
 				96CAE7001778156A00AD59EC /* MainStoryboard_iPhone.storyboard in Resources */,
 				96CAE7031778156A00AD59EC /* MainStoryboard_iPad.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		96CAE7091778156A00AD59EC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96CAE7181778156A00AD59EC /* InfoPlist.strings in Resources */,
+				96A9825417827DAE0077ED3C /* Settings.bundle in Resources */,
+				96BDAA1F17854EAA00D0C274 /* icon.png in Resources */,
+				96BDAA211785501E00D0C274 /* retina.png in Resources */,
+				967885CC17A0B43B00AC4110 /* Hierarchy and Application.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		96CAE70A1778156A00AD59EC /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96CAE6DF1778156A00AD59EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969349C417782EFD00A96464 /* Reachability.m in Sources */,
 				96CAE6F31778156A00AD59EC /* main.m in Sources */,
 				96CAE6F71778156A00AD59EC /* AppDelegate.m in Sources */,
 				96CAE7061778156A00AD59EC /* ViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		96CAE7071778156A00AD59EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96CAE71B1778156A00AD59EC /* WifiCheckerTests.m in Sources */,
+				96B37F11177C230C00BF8D59 /* ErrorViewController.m in Sources */,
+				96E777AA17811DF800A9F80A /* OpeningViewController.m in Sources */,
+				9676733D17977E1300E5BCA7 /* QuickSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		96CAE7121778156A00AD59EC /* PBXTargetDependency */ = {
+		967673351797782300E5BCA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 96CAE6E21778156A00AD59EC /* WifiChecker */;
-			targetProxy = 96CAE7111778156A00AD59EC /* PBXContainerItemProxy */;
+			name = QuickDialog;
+			targetProxy = 967673341797782300E5BCA7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -321,14 +332,6 @@
 				96CAE7021778156A00AD59EC /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		96CAE7161778156A00AD59EC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				96CAE7171778156A00AD59EC /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -395,10 +398,13 @@
 		96CAE71F1778156A00AD59EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WifiChecker/WifiChecker-Prefix.pch";
 				INFOPLIST_FILE = "WifiChecker/WifiChecker-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/QuickDialog\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,45 +412,14 @@
 		96CAE7201778156A00AD59EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WifiChecker/WifiChecker-Prefix.pch";
 				INFOPLIST_FILE = "WifiChecker/WifiChecker-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/QuickDialog\"/**";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		96CAE7221778156A00AD59EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WifiChecker.app/WifiChecker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WifiChecker/WifiChecker-Prefix.pch";
-				INFOPLIST_FILE = "WifiCheckerTests/WifiCheckerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		96CAE7231778156A00AD59EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WifiChecker.app/WifiChecker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WifiChecker/WifiChecker-Prefix.pch";
-				INFOPLIST_FILE = "WifiCheckerTests/WifiCheckerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -467,14 +442,7 @@
 				96CAE7201778156A00AD59EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		96CAE7211778156A00AD59EC /* Build configuration list for PBXNativeTarget "WifiCheckerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				96CAE7221778156A00AD59EC /* Debug */,
-				96CAE7231778156A00AD59EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

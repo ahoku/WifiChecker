@@ -1,21 +1,162 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Uc-ZO-eGz">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="m9g-pH-vW8">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="7Uc-ZO-eGz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uFl-hQ-zFj">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="evh-bJ-ece" kind="relationship" relationship="rootViewController" id="75T-ie-MAm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIu-fs-oYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2772" y="-170"/>
+        </scene>
+        <!--Opening View Controller - Wifi Controller-->
+        <scene sceneID="qBa-E1-DNV">
+            <objects>
+                <viewController id="evh-bJ-ece" customClass="OpeningViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ppY-gG-J0y">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2de-8x-ddN">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Travel Wifi Settings">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkTrue:" destination="rCl-bn-zCY" eventType="touchUpInside" id="O2s-17-dHW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngy-3J-RG4">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Quick Settings">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="quickSettingsButton:" destination="rCl-bn-zCY" eventType="touchUpInside" id="Jet-2d-H3c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ngy-3J-RG4" firstAttribute="centerX" secondItem="2de-8x-ddN" secondAttribute="centerX" type="default" id="8Ad-51-WcO"/>
+                            <constraint firstAttribute="bottom" secondItem="2de-8x-ddN" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="XD1-Ij-ETk"/>
+                            <constraint firstItem="2de-8x-ddN" firstAttribute="centerX" secondItem="ppY-gG-J0y" secondAttribute="centerX" type="default" id="fal-3L-JX9"/>
+                            <constraint firstItem="2de-8x-ddN" firstAttribute="top" secondItem="ngy-3J-RG4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="sgV-xM-a3y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Wifi Controller" id="hpf-Cw-qbc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCl-bn-zCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1888" y="-170"/>
+        </scene>
+        <!--View Controller - Wifi Controller-->
         <scene sceneID="4">
             <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUq-tY-TVb">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XUq-tY-TVb" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="Q4a-pI-5U0"/>
+                            <constraint firstItem="XUq-tY-TVb" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="RT5-4M-lYS"/>
+                            <constraint firstItem="XUq-tY-TVb" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="Rpm-ja-zxM"/>
+                            <constraint firstItem="XUq-tY-TVb" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="kSP-aG-WOV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Wifi Controller" id="k0m-IU-Lcd"/>
+                    <connections>
+                        <outlet property="viewWeb" destination="XUq-tY-TVb" id="QjO-u1-otP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1055" y="-170"/>
+        </scene>
+        <!--Error View Controller-->
+        <scene sceneID="ZJc-lW-SVr">
+            <objects>
+                <viewController storyboardIdentifier="ErrorView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n9Z-IC-CN5" customClass="ErrorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="" id="kU8-fX-UIC">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Error View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwi-vh-Qw5">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="hQH-BA-A2T"/>
+                                    <constraint firstAttribute="height" constant="23" id="zxF-a5-Kpe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51630434782608692" green="0.0" blue="0.048537336599175383" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xwi-vh-Qw5" firstAttribute="centerX" secondItem="kU8-fX-UIC" secondAttribute="centerX" type="default" id="GY7-Nc-xKL"/>
+                            <constraint firstItem="xwi-vh-Qw5" firstAttribute="top" secondItem="kU8-fX-UIC" secondAttribute="top" constant="490" id="LCX-k3-gUN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhC-FL-vgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-161" y="-170"/>
+        </scene>
+        <!--Quick Settings View Controller-->
+        <scene sceneID="yYF-ZE-sFy">
+            <objects>
+                <viewController storyboardIdentifier="QuickSettings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W1Z-nc-lKO" customClass="QuickSettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wQi-38-P14">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6I-Pq-Fby">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="wQi-38-P14" id="zbx-ig-VN2"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M6I-Pq-Fby" firstAttribute="leading" secondItem="wQi-38-P14" secondAttribute="leading" type="default" id="LU6-xw-Rz4"/>
+                            <constraint firstItem="M6I-Pq-Fby" firstAttribute="top" secondItem="wQi-38-P14" secondAttribute="top" type="default" id="NjX-fa-iCy"/>
+                            <constraint firstItem="M6I-Pq-Fby" firstAttribute="bottom" secondItem="wQi-38-P14" secondAttribute="bottom" type="default" id="Wx3-y7-mxY"/>
+                            <constraint firstItem="M6I-Pq-Fby" firstAttribute="trailing" secondItem="wQi-38-P14" secondAttribute="trailing" type="default" id="nbE-DT-Znd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewWeb" destination="M6I-Pq-Fby" id="9hg-dS-90W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aj6-Ju-Mmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="-170"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
